@@ -20,8 +20,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Compilar con Maven
+      - name: Compila, prueba y empaqueta
         run: mvn -B package --file pom.xml
 
-      - name: Ejecutar pruebas
-        run: mvn test
