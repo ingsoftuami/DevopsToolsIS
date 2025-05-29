@@ -1,13 +1,6 @@
 spring:
-  config:
-    activate:
-      on-profile: development
-logging:
-  level:
-    root: INFO
-    org.springframework.*: INFO
----
-spring:
+  application:
+    name: ejemplobackend
   config:
     activate:
       on-profile: development
@@ -22,6 +15,7 @@ spring:
   h2:
     console:
       enabled: true
+
 server:
   port: 8080
 
@@ -42,6 +36,7 @@ management:
       prometheus:
         enabled: true
 
-spring:
-  application:
-    name: ejemplobackend
+logging:
+  level:
+    root: INFO
+    org.springframework.*: INFO
